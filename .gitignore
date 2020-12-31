@@ -1,0 +1,6 @@
+/public/assets/
+node_modules/
+
+npm-*.log
+pnpm-*.log
+yarn-*.log
