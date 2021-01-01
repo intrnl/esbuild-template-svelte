@@ -2,7 +2,7 @@ import esbuild from 'esbuild';
 import chokidar from 'chokidar';
 import liveServer from 'live-server';
 
-import esbuildConfig from '../esbuild.config.js';
+import esbuildConfig from '../esbuild.config.mjs';
 
 
 let builder = await esbuild.build({
@@ -14,9 +14,7 @@ let builder = await esbuild.build({
 });
 
 chokidar.watch('src/**/*', { ignoreInitial: true })
-	.on('all', () => {
-		builder.rebuild();
-	});
+	.on('all', () => { builder.rebuild() });
 
 liveServer.start({
 	root: './public/',

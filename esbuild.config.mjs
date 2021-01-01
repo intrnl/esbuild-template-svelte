@@ -1,4 +1,4 @@
-let { svelte } = require('@intrnl/esbuild-plugin-svelte');
+import { svelte } from '@intrnl/esbuild-plugin-svelte';
 
 
 let buildOptions = {
@@ -16,4 +16,4 @@ if (process.env.NODE_ENV == 'production') {
 	buildOptions.minify = true;
 }
 
-module.exports = buildOptions;
+export default buildOptions;
