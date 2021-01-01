@@ -1,6 +1,6 @@
 import esbuild from 'esbuild';
 
-import esbuildConfig from '../esbuild.config.js';
+import esbuildConfig from '../esbuild.config.mjs';
 
 
 esbuild.build({
