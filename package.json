@@ -6,11 +6,11 @@
 		"build": "NODE_ENV=production node ./scripts/build.mjs"
 	},
 	"dependencies": {
-		"@types/live-server": "^1.2.0",
 		"svelte": "^3.31.0"
 	},
 	"devDependencies": {
 		"@intrnl/esbuild-plugin-svelte": "^0.1.2",
+		"@types/live-server": "^1.2.0",
 		"chokidar": "^3.4.3",
 		"esbuild": "^0.8.28",
 		"live-server": "^1.2.1"
